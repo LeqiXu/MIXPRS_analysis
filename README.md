@@ -25,7 +25,7 @@ MIXPRS is compared with **seven state-of-the-art PRS methods**:
 
 ## Directory Structure  
 - `Simulation/` – Contains scripts for **simulation studies** evaluating MIXPRS and seven exsiting methods under different settings.  
-- `Real_data/` – Contains scripts for **real data analysis** evaluating MIXPRS and seven exsiting methods with 22 quantitative traits and 4 binary traits in UKBB and AoU.
+- `Real_data/` – Contains scripts for **real data analyses** evaluating MIXPRS and seven exsiting methods with 22 quantitative traits and 4 binary traits in UKBB and AoU.
 
 ## Support
 Please direct any problems or questions to Leqi Xu (leqi.xu@yale.edu).
