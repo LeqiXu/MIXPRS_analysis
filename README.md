@@ -1,5 +1,5 @@
 # MIXPRS_analysis  
-This repository contains the codes used for **simulation studies, real-data analyses and main figure plot** in the **MIXPRS** paper.  
+This repository contains the codes used for **simulation studies and real-data analyses** in the **MIXPRS** paper.  
 
 ## Overview  
 **MIXPRS** is a data fission-based multi-population PRS integration framework designed to effectively combine PRS derived from multiple populations and methods. The MIXPRS pipeline requires **only GWAS summary statistics and LD reference panels**.
