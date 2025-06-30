@@ -29,3 +29,6 @@ MIXPRS is compared with **seven state-of-the-art PRS methods**:
 
 ## Support
 Please direct any problems or questions to Leqi Xu (leqi.xu@yale.edu).
+
+## Citation  
+Xu, L., Dong, Y., Zeng, X., Bian, Z., Zhou, G., Guan, L., & Zhao, H. (2025). Almost Free Enhancement of Multi-Population PRS: From Data-Fission to Pseudo-GWAS Subsampling. bioRxiv, 2025-06.
