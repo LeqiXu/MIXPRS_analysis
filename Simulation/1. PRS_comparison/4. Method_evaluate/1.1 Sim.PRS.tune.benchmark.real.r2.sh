@@ -23,6 +23,11 @@ for (sample2 in sample2_list){
         sample2_val = "10K"
     }
 
+    if (sample2 == "90K"){
+        sample2_train = "80K"
+        sample2_val = "10K"
+    }
+
     sub_prs_table = data.table(n = c(sim_i), pop = c(pop), p = c(p), rhog = c(rhog), sample2 = c(sample2),
                                MIXPRS_auto_5 = c(0), SDPRX_auto_2 =c(0), XPASS_auto_2 =c(0), JointPRS_tune_5 =c(0), PRScsx_tune_5 =c(0), PROSPER_tune_5 =c(0), MUSSEL_tune_5 =c(0), BridgePRS_tune_2 =c(0))
 
@@ -45,6 +50,10 @@ for (sample2 in sample2_list){
     test_XPASS_2 = test_XPASS_2[match(test_pheno_id,test_XPASS_2$IID),]
 
     ## tune methods
+    R2_sub = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/sim_result/Final_weight/auto/JointPRS/sim",sim_i,"_p",p,"_rho",rhog,"_UKB_",sample2_train,"_",sample2_val,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_r2_",pop,".txt"))
+    R2_full = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/sim_result/Final_weight/tuning/JointPRS_tune/sim",sim_i,"_p",p,"_rho",rhog,"_UKB_",sample2_train,"_",sample2_val,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_r2_",pop,".txt"))
+    p_value = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/sim_result/Final_weight/auto/JointPRS/sim",sim_i,"_p",p,"_rho",rhog,"_UKB_",sample2_train,"_",sample2_val,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_pvalue_",pop,".txt"))
+
     if (R2_sub > 0.01 && (R2_full - R2_sub > 0) && p_value < 0.05){
     JointPRS_weight = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/sim_result/Final_weight/tuning/JointPRS_tune/sim",sim_i,"_p",p,"_rho",rhog,"_",sample1,"_",sample2_train,"_",sample2_val,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_weight_",pop,".txt"))
 
@@ -63,6 +72,7 @@ for (sample2 in sample2_list){
     test_JointPRS_5_AMR = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/JointPRS/test_sim",sim_i,"_h2",h2,"_p",p,"_rhog",rhog,"_",sample1,"_",sample2,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_beta_AMR_prs_",pop,".sscore"))
     test_JointPRS_5_AMR = test_JointPRS_5_AMR[match(test_pheno_id,test_JointPRS_5_AMR$IID),]
 
+    test_JointPRS_5 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/JointPRS/test_sim",sim_i,"_h2",h2,"_p",p,"_rhog",rhog,"_",sample1,"_",sample2,"_JointPRS_real_EUR_EAS_AFR_SAS_AMR_beta_",pop,"_prs_",pop,".sscore"))
     test_JointPRS_5 = test_JointPRS_5[,c("IID")]
     test_JointPRS_5$SCORE1_AVG = JointPRS_weight$EUR * scale(test_JointPRS_5_EUR$SCORE1_AVG) + JointPRS_weight$EAS * scale(test_JointPRS_5_EAS$SCORE1_AVG) + JointPRS_weight$AFR * scale(test_JointPRS_5_AFR$SCORE1_AVG) + JointPRS_weight$SAS * scale(test_JointPRS_5_SAS$SCORE1_AVG) + JointPRS_weight$AMR * scale(test_JointPRS_5_AMR$SCORE1_AVG)
     } else {
@@ -114,6 +124,5 @@ for (sample2 in sample2_list){
 }
 }
 }
-
 
 write.table(prs_table,paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/evaluation/sim_PRS_real_tune_benchmark_r2.csv"),quote=F,sep='\t',row.names=F,col.names=T)
