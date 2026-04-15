@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/984991782.svg)](https://doi.org/10.5281/zenodo.19599990)
 # MIXPRS_analysis  
 This repository contains the codes used for **simulation studies and real-data analyses** in the **MIXPRS** paper.  
 
