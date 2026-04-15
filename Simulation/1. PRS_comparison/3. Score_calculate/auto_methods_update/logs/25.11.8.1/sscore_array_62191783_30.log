@@ -1,0 +1,68 @@
+========================================================
+RUNNING: MIXPRS_S
+  Simulation ID : 1
+  P-value       : 0.1
+  Sample Scenario : 80K
+  Test Pop (bfile): AFR
+========================================================
+  Generating 2 scores for MIXPRS_S...
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_EUR_prs_AFR.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/AFR_sim1_p0.1_rho0.8_80K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_EUR_prs_AFR
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_EUR.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:35:29 2025
+1031783 MiB RAM detected; reserving 515891 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR.fam.
+1164827 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR.bim.
+Note: No phenotype data present.
+--extract: 717948 variants remaining.
+Calculating allele frequencies... 0%5%11%16%22%27%33%39%44%50%56%61%67%72%78%84%89%95%done.
+717948 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 170k variants processed.--score: 180k variants processed.Warning: 6 --score file entries were skipped due to missing variant IDs.
+(Add the 'list-variants' modifier to see which variants were actually used for
+scoring.)
+--score: 182363 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_EUR_prs_AFR.sscore
+.
+End time: Sat Nov  8 21:35:40 2025
+    - Created sim1_p0.1_rho0.8_80K_EUR_AFR_beta_EUR_prs_AFR.sscore
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_AFR_prs_AFR.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/AFR_sim1_p0.1_rho0.8_80K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_AFR_prs_AFR
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_AFR.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:35:40 2025
+1031783 MiB RAM detected; reserving 515891 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR.fam.
+1164827 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AFR/test/AFR.bim.
+Note: No phenotype data present.
+--extract: 717948 variants remaining.
+Calculating allele frequencies... 0%5%11%16%22%27%33%39%44%50%56%61%67%72%78%84%89%95%done.
+717948 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 170k variants processed.--score: 180k variants processed.--score: 190k variants processed.--score: 200k variants processed.--score: 210k variants processed.--score: 220k variants processed.--score: 230k variants processed.--score: 240k variants processed.--score: 250k variants processed.--score: 260k variants processed.--score: 270k variants processed.--score: 280k variants processed.--score: 290k variants processed.--score: 300k variants processed.--score: 310k variants processed.--score: 320k variants processed.--score: 330k variants processed.--score: 335827 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_80K_EUR_AFR_beta_AFR_prs_AFR.sscore
+.
+End time: Sat Nov  8 21:35:54 2025
+    - Created sim1_p0.1_rho0.8_80K_EUR_AFR_beta_AFR_prs_AFR.sscore
+--- Job complete for MIXPRS_S, sim 1, p 0.1, sample 80K, pop AFR ---

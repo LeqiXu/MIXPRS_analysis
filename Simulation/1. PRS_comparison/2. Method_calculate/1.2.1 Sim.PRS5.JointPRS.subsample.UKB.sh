@@ -249,10 +249,13 @@ else
 fi
 
 for chr in {1..22}; do
+for outpop in EUR EAS AFR SAS AMR; do
 
-rm -rf /gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/subsample/JointPRS/${out_name}_AMR_pst_eff_a1_b0.5_phiauto_chr${chr}.txt
+rm -rf /gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/subsample/JointPRS/${out_name}_${outpop}_pst_eff_a1_b0.5_phiauto_chr${chr}.txt
 
 done
+done
+
 done
 
 done

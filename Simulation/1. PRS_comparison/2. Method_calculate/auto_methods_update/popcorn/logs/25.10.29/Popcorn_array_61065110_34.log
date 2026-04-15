@@ -1,0 +1,36 @@
+========================================================
+RUNNING Popcorn with parameters:
+  Job ID          : 61065110_34
+  Simulation ID   : 2
+  P-value         : 0.1
+  Sample Scenario : 15K (for SAS)
+  Population 1    : EUR (80K)
+  Population 2    : SAS (15K)
+  sfile1 (Pop1)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_subcol.txt
+  sfile2 (Pop2)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.1_rho0.8_15K_subcol.txt
+  cfile           : /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_SAS_all_gen_eff.cscore
+  Output File     : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim2_p0.1_rho0.8_EUR_SAS_80K_15K_popcorn_corr.txt
+========================================================
+Popcorn version 1.1
+(C) 2015-2025 Brielin C Brown
+University of California, Berkeley
+GNU General Public License v3
+
+Invoking command: python /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/bin/popcorn fit -v 0 --cfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_SAS_all_gen_eff.cscore --gen_effect --sfile1 /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_subcol.txt --sfile2 /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.1_rho0.8_15K_subcol.txt /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim2_p0.1_rho0.8_EUR_SAS_80K_15K_popcorn_corr.txt
+Beginning analysis at Thu Oct 30 18:14:50 2025
+Analyzing a pair of traits in two populations
+Parsing /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_subcol.txt ...
+Parsing /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.1_rho0.8_15K_subcol.txt ...
+716157 717967 SNPs detected in input.
+706102 SNPs remaining after merging with score file.
+706102 SNPs remaining after filtering on AF and self-compliment SNPs.
+Performing jackknife estimation of the standard error using 200 blocks of size 3530 .
+Jackknife iter: 1 Jackknife iter: 2 Jackknife iter: 3 Jackknife iter: 4 Jackknife iter: 5 Jackknife iter: 6 Jackknife iter: 7 Jackknife iter: 8 Jackknife iter: 9 Jackknife iter: 10 Jackknife iter: 11 Jackknife iter: 12 Jackknife iter: 13 Jackknife iter: 14 Jackknife iter: 15 Jackknife iter: 16 Jackknife iter: 17 Jackknife iter: 18 Jackknife iter: 19 Jackknife iter: 20 Jackknife iter: 21 Jackknife iter: 22 Jackknife iter: 23 Jackknife iter: 24 Jackknife iter: 25 Jackknife iter: 26 Jackknife iter: 27 Jackknife iter: 28 Jackknife iter: 29 Jackknife iter: 30 Jackknife iter: 31 Jackknife iter: 32 Jackknife iter: 33 Jackknife iter: 34 Jackknife iter: 35 Jackknife iter: 36 Jackknife iter: 37 Jackknife iter: 38 Jackknife iter: 39 Jackknife iter: 40 Jackknife iter: 41 Jackknife iter: 42 Jackknife iter: 43 Jackknife iter: 44 Jackknife iter: 45 Jackknife iter: 46 Jackknife iter: 47 Jackknife iter: 48 Jackknife iter: 49 Jackknife iter: 50 Jackknife iter: 51 Jackknife iter: 52 Jackknife iter: 53 Jackknife iter: 54 Jackknife iter: 55 Jackknife iter: 56 Jackknife iter: 57 Jackknife iter: 58 Jackknife iter: 59 Jackknife iter: 60 Jackknife iter: 61 Jackknife iter: 62 Jackknife iter: 63 Jackknife iter: 64 Jackknife iter: 65 Jackknife iter: 66 Jackknife iter: 67 Jackknife iter: 68 Jackknife iter: 69 Jackknife iter: 70 Jackknife iter: 71 Jackknife iter: 72 Jackknife iter: 73 Jackknife iter: 74 Jackknife iter: 75 Jackknife iter: 76 Jackknife iter: 77 Jackknife iter: 78 Jackknife iter: 79 Jackknife iter: 80 Jackknife iter: 81 Jackknife iter: 82 Jackknife iter: 83 Jackknife iter: 84 Jackknife iter: 85 Jackknife iter: 86 Jackknife iter: 87 Jackknife iter: 88 Jackknife iter: 89 Jackknife iter: 90 Jackknife iter: 91 Jackknife iter: 92 Jackknife iter: 93 Jackknife iter: 94 Jackknife iter: 95 Jackknife iter: 96 Jackknife iter: 97 Jackknife iter: 98 Jackknife iter: 99 Jackknife iter: 100 Jackknife iter: 101 Jackknife iter: 102 Jackknife iter: 103 Jackknife iter: 104 Jackknife iter: 105 Jackknife iter: 106 Jackknife iter: 107 Jackknife iter: 108 Jackknife iter: 109 Jackknife iter: 110 Jackknife iter: 111 Jackknife iter: 112 Jackknife iter: 113 Jackknife iter: 114 Jackknife iter: 115 Jackknife iter: 116 Jackknife iter: 117 Jackknife iter: 118 Jackknife iter: 119 Jackknife iter: 120 Jackknife iter: 121 Jackknife iter: 122 Jackknife iter: 123 Jackknife iter: 124 Jackknife iter: 125 Jackknife iter: 126 Jackknife iter: 127 Jackknife iter: 128 Jackknife iter: 129 Jackknife iter: 130 Jackknife iter: 131 Jackknife iter: 132 Jackknife iter: 133 Jackknife iter: 134 Jackknife iter: 135 Jackknife iter: 136 Jackknife iter: 137 Jackknife iter: 138 Jackknife iter: 139 Jackknife iter: 140 Jackknife iter: 141 Jackknife iter: 142 Jackknife iter: 143 Jackknife iter: 144 Jackknife iter: 145 Jackknife iter: 146 Jackknife iter: 147 Jackknife iter: 148 Jackknife iter: 149 Jackknife iter: 150 Jackknife iter: 151 Jackknife iter: 152 Jackknife iter: 153 Jackknife iter: 154 Jackknife iter: 155 Jackknife iter: 156 Jackknife iter: 157 Jackknife iter: 158 Jackknife iter: 159 Jackknife iter: 160 Jackknife iter: 161 Jackknife iter: 162 Jackknife iter: 163 Jackknife iter: 164 Jackknife iter: 165 Jackknife iter: 166 Jackknife iter: 167 Jackknife iter: 168 Jackknife iter: 169 Jackknife iter: 170 Jackknife iter: 171 Jackknife iter: 172 Jackknife iter: 173 Jackknife iter: 174 Jackknife iter: 175 Jackknife iter: 176 Jackknife iter: 177 Jackknife iter: 178 Jackknife iter: 179 Jackknife iter: 180 Jackknife iter: 181 Jackknife iter: 182 Jackknife iter: 183 Jackknife iter: 184 Jackknife iter: 185 Jackknife iter: 186 Jackknife iter: 187 Jackknife iter: 188 Jackknife iter: 189 Jackknife iter: 190 Jackknife iter: 191 Jackknife iter: 192 Jackknife iter: 193 Jackknife iter: 194 Jackknife iter: 195 Jackknife iter: 196 Jackknife iter: 197 Jackknife iter: 198 Jackknife iter: 199 Jackknife iter: 200 
+      Val (obs)        SE          Z     P (Z)
+h1^2   0.341597  0.012664  26.973171  0.000000
+h2^2   0.333267  0.035738   9.325367  0.000000
+pge    0.786855  0.045512   4.683305  0.000003
+Analysis finished at Thu Oct 30 18:18:49 2025
+Total time elapsed: 238.85
+Popcorn analysis complete for sim2, p=0.1, EUR(80K) vs SAS(15K)
+Output saved to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim2_p0.1_rho0.8_EUR_SAS_80K_15K_popcorn_corr.txt

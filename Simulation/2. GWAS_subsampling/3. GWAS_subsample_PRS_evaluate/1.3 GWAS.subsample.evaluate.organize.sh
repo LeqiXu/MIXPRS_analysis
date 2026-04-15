@@ -29,11 +29,29 @@ combined_residual_full_snplist = merge(combined_residual_full_snplist_train[,c("
 colnames(combined_residual_full_snplist) = c("SNP","train_residual","tune_residual")
 combined_residual_full_snplist <- combined_residual_full_snplist[is.finite(combined_residual_full_snplist$train_residual) & is.finite(combined_residual_full_snplist$tune_residual),]
 
-print("full_snplist")
-print(var(combined_residual_full_snplist$train_residual))
-print(var(combined_residual_full_snplist$tune_residual))
+    print("full_snplist")
+    print(var(combined_residual_full_snplist$train_residual))
+    print(var(combined_residual_full_snplist$tune_residual))
 
-sub_corr_table = data.table(pop = c(pop), sample_size = c(sample_size), sim_i = c(sim_i), repeat_i = c(repeat_i), p = c(p), type = c("full_snplist"), corr = c(cor(combined_residual_full_snplist$train_residual,combined_residual_full_snplist$tune_residual)))
+    full_corr_test <- cor.test(
+      combined_residual_full_snplist$train_residual,
+      combined_residual_full_snplist$tune_residual,
+      method = "pearson"
+    )
+
+    sub_corr_table = data.table(
+      pop          = c(pop),
+      sample_size  = c(sample_size),
+      sim_i        = c(sim_i),
+      repeat_i     = c(repeat_i),
+      p            = c(p),
+      type         = c("full_snplist"),
+      corr         = c(as.numeric(full_corr_test$estimate)),
+      p_value      = c(full_corr_test$p.value),
+      ci_low       = c(full_corr_test$conf.int[1]),
+      ci_high      = c(full_corr_test$conf.int[2]),
+      sample_count = c(full_corr_test$parameter + 2)
+    )
 corr_table = rbind(corr_table,sub_corr_table)
 
 combined_residual_prune_snplist_train = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/residual/",pop,"_sim",sim_i,"_h2",h2,"_p",p,"_rhog",rhog,"_",sample_size,"_prune_snplist_",i,"_",pop,"_train_GWAS_residual_approxFALSE_ratio3.00_repeat",repeat_i,".txt"))
@@ -42,11 +60,29 @@ combined_residual_prune_snplist = merge(combined_residual_prune_snplist_train[,c
 colnames(combined_residual_prune_snplist) = c("SNP","train_residual","tune_residual")
 combined_residual_prune_snplist <- combined_residual_prune_snplist[is.finite(combined_residual_prune_snplist$train_residual) & is.finite(combined_residual_prune_snplist$tune_residual),]
 
-print("prune_snplist")
-print(var(combined_residual_prune_snplist$train_residual))
-print(var(combined_residual_prune_snplist$tune_residual))
+    print("prune_snplist")
+    print(var(combined_residual_prune_snplist$train_residual))
+    print(var(combined_residual_prune_snplist$tune_residual))
 
-sub_corr_table = data.table(pop = c(pop), sample_size = c(sample_size), sim_i = c(sim_i), repeat_i = c(repeat_i), p = c(p), type = c("prune_snplist"), corr = c(cor(combined_residual_prune_snplist$train_residual,combined_residual_prune_snplist$tune_residual)))
+    prune_corr_test <- cor.test(
+      combined_residual_prune_snplist$train_residual,
+      combined_residual_prune_snplist$tune_residual,
+      method = "pearson"
+    )
+
+    sub_corr_table = data.table(
+      pop          = c(pop),
+      sample_size  = c(sample_size),
+      sim_i        = c(sim_i),
+      repeat_i     = c(repeat_i),
+      p            = c(p),
+      type         = c("prune_snplist"),
+      corr         = c(as.numeric(prune_corr_test$estimate)),
+      p_value      = c(prune_corr_test$p.value),
+      ci_low       = c(prune_corr_test$conf.int[1]),
+      ci_high      = c(prune_corr_test$conf.int[2]),
+      sample_count = c(prune_corr_test$parameter + 2)
+    )
 corr_table = rbind(corr_table,sub_corr_table)
 
 combined_residual_prune_snplist_ind_approx_train = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/residual/",pop,"_sim",sim_i,"_h2",h2,"_p",p,"_rhog",rhog,"_",sample_size,"_prune_snplist_",i,"_",pop,"_train_GWAS_residual_approxTRUE_ratio3.00_repeat",repeat_i,".txt"))
@@ -55,11 +91,29 @@ combined_residual_prune_snplist_ind_approx = merge(combined_residual_prune_snpli
 colnames(combined_residual_prune_snplist_ind_approx) = c("SNP","train_residual","tune_residual")
 combined_residual_prune_snplist_ind_approx <- combined_residual_prune_snplist_ind_approx[is.finite(combined_residual_prune_snplist_ind_approx$train_residual) & is.finite(combined_residual_prune_snplist_ind_approx$tune_residual),]
 
-print("prune_snplist_ind_approx")
-print(var(combined_residual_prune_snplist_ind_approx$train_residual))
-print(var(combined_residual_prune_snplist_ind_approx$tune_residual))
+    print("prune_snplist_ind_approx")
+    print(var(combined_residual_prune_snplist_ind_approx$train_residual))
+    print(var(combined_residual_prune_snplist_ind_approx$tune_residual))
 
-sub_corr_table = data.table(pop = c(pop), sample_size = c(sample_size), sim_i = c(sim_i), repeat_i = c(repeat_i), p = c(p), type = c("prune_snplist_ind_approx"), corr = c(cor(combined_residual_prune_snplist_ind_approx$train_residual,combined_residual_prune_snplist_ind_approx$tune_residual)))
+    prune_ind_corr_test <- cor.test(
+      combined_residual_prune_snplist_ind_approx$train_residual,
+      combined_residual_prune_snplist_ind_approx$tune_residual,
+      method = "pearson"
+    )
+
+    sub_corr_table = data.table(
+      pop          = c(pop),
+      sample_size  = c(sample_size),
+      sim_i        = c(sim_i),
+      repeat_i     = c(repeat_i),
+      p            = c(p),
+      type         = c("prune_snplist_ind_approx"),
+      corr         = c(as.numeric(prune_ind_corr_test$estimate)),
+      p_value      = c(prune_ind_corr_test$p.value),
+      ci_low       = c(prune_ind_corr_test$conf.int[1]),
+      ci_high      = c(prune_ind_corr_test$conf.int[2]),
+      sample_count = c(prune_ind_corr_test$parameter + 2)
+    )
 corr_table = rbind(corr_table,sub_corr_table)
 
 }

@@ -1,0 +1,9 @@
+========================================================
+RUNNING JointPRS with parameters:
+  Simulation ID : 1
+  P-value       : 0.1
+  Sample Scenario : 80K
+  Chromosome    : 22
+  GWAS N values : 311600,80000,80000,80000,80000
+  Input SST list: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EUR_sim1_p0.1_rho0.8_80K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EAS_sim1_p0.1_rho0.8_80K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AFR_sim1_p0.1_rho0.8_80K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/SAS_sim1_p0.1_rho0.8_80K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AMR_sim1_p0.1_rho0.8_80K_subcol.txt
+========================================================

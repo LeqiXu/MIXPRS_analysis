@@ -26,12 +26,12 @@ my_theme <- theme(
   axis.text.x  = element_text(size = 5, face = "bold"),
   axis.text.y  = element_text(size = 6, face = "bold"),
   # leave all other text at your preferred size
-  plot.title   = element_text(size = 10, face = "bold"),
+  plot.title   = element_text(size = 10, face = "bold", hjust = 0.5),
   strip.text   = element_text(size = 10, face = "bold"),
   panel.grid.major.x = element_blank(),
   panel.grid.minor.x = element_blank(),
-  panel.grid.major.y = element_line(color = "grey", size = 0.5),
-  panel.grid.minor.y = element_line(color = "lightgrey", size = 0.25),
+  panel.grid.major.y = element_blank(),
+  panel.grid.minor.y = element_blank(),
   legend.position  = "top",
   legend.title     = element_text(size = 9, face = "bold"),     # title size
   legend.text      = element_text(size = 7),
@@ -41,12 +41,12 @@ my_theme <- theme(
 # Continuous plot
 # Continuous plot
 ## Data preprocessing
-prs_table = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/evaluation/sim_PRS_real_tune_benchmark_r2.csv"))
+prs_table = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/sim_result/evaluation/sim_PRS_real_tune_benchmark_r2_update.csv"))
 prs_table = prs_table[,c("n","pop","p","rhog","sample2","MIXPRS_auto_5","SDPRX_auto_2","XPASS_auto_2","JointPRS_tune_5","PRScsx_tune_5","PROSPER_tune_5","MUSSEL_tune_5","BridgePRS_tune_2")]
 colnames(prs_table) = c("n","pop","p","rhog","sample2","MIXPRS","SDPRX","XPASS","JointPRS","PRS-CSx","PROSPER","MUSSEL","BridgePRS")
 prs_table = prs_table %>% 
-  mutate(minor_sample = case_when(sample2 == "25K" ~ "25,000",
-                                  sample2 == "90K" ~ "90,000"))
+  mutate(minor_sample = case_when(sample2 == "15K" ~ "15,000",
+                                  sample2 == "80K" ~ "80,000"))
 
 ## Reshape the data to a long format and estimate the mean and sd
 long_table <- melt(prs_table, id.vars = c("n","pop","p","rhog","sample2","minor_sample"),
@@ -79,7 +79,7 @@ long_table_with_MIXPRS$method = factor(long_table_with_MIXPRS$method, levels = c
 
 
 ## Plot for each cohort and pop
-p_25K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample == "25,000"),],
+p_15K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample == "15,000"),],
                   aes(x = method, y = relative_change, group = method, fill = method)) +
   geom_violin(trim=TRUE, position=position_dodge(width=0.8), width = 0.8, color="white", adjust=1.5, scale="width") +
   geom_point(aes(group=pop), position=position_jitterdodge(jitter.width = 0, dodge.width=0.5), 
@@ -89,7 +89,7 @@ p_25K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample 
   geom_hline(yintercept = 0, linetype = "solid", color = alpha("darkred", alpha=0.5), size = 0.6) +
   scale_fill_manual(values = all_method_color, name = "All method") +
   facet_wrap(~ pop, ncol = 2) +
-  labs(title = "Non-European Population Training Sample Size = 25,000",
+  labs(title = "Non-European Population Training Sample Size = 15,000",
        x = "Method",
        y = expression(paste("R"^2, "/", "R"^2, scriptstyle("MIXPRS"), "-1"))) +
   theme_classic() +
@@ -97,7 +97,7 @@ p_25K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample 
   theme(legend.position = "none") +
   scale_y_continuous(labels = scales::percent, limits = c(-1,0.2))
 
-p_90K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample == "90,000"),],
+p_80K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample == "80,000"),],
                   aes(x = method, y = relative_change, group = method, fill = method)) +
   geom_violin(trim=TRUE, position=position_dodge(width=0.8), width = 0.8, color="white", adjust=1.5, scale="width") +
   geom_point(aes(group=pop), position=position_jitterdodge(jitter.width = 0, dodge.width=0.5), 
@@ -107,7 +107,7 @@ p_90K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample 
   geom_hline(yintercept = 0, linetype = "solid", color = alpha("darkred", alpha=0.5), size = 0.6) +
   scale_fill_manual(values = all_method_color, name = "All method") +
   facet_wrap(~ pop, ncol = 2) +
-  labs(title = "Non-European Population Training Sample Size = 90,000",
+  labs(title = "Non-European Population Training Sample Size = 80,000",
        x = "Method",
        y = expression(paste("R"^2, "/", "R"^2, scriptstyle("MIXPRS"), "-1"))) +
   theme_classic() +
@@ -115,7 +115,7 @@ p_90K = ggplot(long_table_with_MIXPRS[which(long_table_with_MIXPRS$minor_sample 
   theme(legend.position = "none") +
   scale_y_continuous(labels = scales::percent, limits = c(-1,0.2))
 
-combined_plot <- ggarrange(p_25K, p_90K, ncol = 1, nrow = 2, labels = c("a","b"), heights = c(0.5,0.5))
+combined_plot <- ggarrange(p_15K, p_80K, ncol = 1, nrow = 2, labels = c("a","b"), heights = c(0.5,0.5))
 
 # Save the figure to match the journal guidelines
 ggsave(filename = "Figure2.pdf",

@@ -118,16 +118,11 @@ Trait_MUSSEL_tune_max = Trait_MUSSEL_tune_max[match(Trait_pheno_id,Trait_MUSSEL_
 MIX_PRS = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/summary_result/MIXPRS/UKB_",trait,"_MIXPRS_subsample_prune_prs_",pop,".sscore"))
 MIX_PRS = MIX_PRS[match(Trait_pheno_id,MIX_PRS$IID),]
 
-if (pop == "EAS" || pop == "AFR"){
-Trait_SDPRX_auto_2 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/summary_result/same_cohort/SDPRX/UKB_",trait,"_SDPRX_test_",s,"_EUR_",pop,"_prs_",pop,".sscore"))
-Trait_SDPRX_auto_2 = Trait_SDPRX_auto_2[match(Trait_pheno_id,Trait_SDPRX_auto_2$IID),]
-} else {
 Trait_SDPRX_auto_2 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/SWIFT/result/summary_result/SDPRX/UKB_",trait,"_SDPRX_real_EUR_",pop,"_beta_",pop,"_prs_",pop,".sscore"))
 Trait_SDPRX_auto_2 = Trait_SDPRX_auto_2[match(Trait_pheno_id,Trait_SDPRX_auto_2$IID),]
 colnames(Trait_SDPRX_auto_2)[5] = "SCORE1_AVG"
-}
 
-Trait_XPASS_auto_2 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/summary_result/same_cohort/XPASS/UKB_",trait,"_XPASS_test_",s,"_EUR_",pop,"_prs_",pop,".sscore"))
+Trait_XPASS_auto_2 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/summary_result/no_val/XPASS/UKB_",trait,"_XPASS_EUR_",pop,"_prs_",pop,".sscore"))
 Trait_XPASS_auto_2 = Trait_XPASS_auto_2[match(Trait_pheno_id,Trait_XPASS_auto_2$IID),]
 
 Trait_BridgePRS_tune_2 = fread(paste0("/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/result/summary_result/same_cohort/BridgePRS/UKB_",trait,"_BridgePRS_test_",s,"_EUR_",pop,"_prs_",pop,".sscore"))

@@ -1,0 +1,19 @@
+========================================================
+RUNNING SDPRX with parameters:
+  Simulation ID : 1
+  P-value       : 0.1
+  Sample Scenario : 15K (for EAS)
+  Population 1  : EUR (N=311600)
+  Population 2  : EAS (N=15000)
+  Chromosome    : 1
+  Est. Rho      : 0.81
+  LD Directory  : /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/ref_data/SDPRX/EUR_EAS
+  SS1 File      : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/SDPRX/EUR_sim1_p0.1_rho0.8_80K_subcol.txt
+  SS2 File      : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/SDPRX/EAS_sim1_p0.1_rho0.8_15K_subcol.txt
+  Out Name      : sim1_p0.1_rho0.8_15K_EUR_EAS_SDPRX_chr1
+========================================================
+Traceback (most recent call last):
+  File "/gpfs/gibbs/pi/zhao/lx94/JointPRS/method/SDPRX/SDPRX.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SDPRX analysis complete for sim1, p=0.1, sample_size=15K, pop2=EAS, chr=1

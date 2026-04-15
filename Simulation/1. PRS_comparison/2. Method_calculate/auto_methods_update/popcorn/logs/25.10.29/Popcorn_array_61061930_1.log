@@ -1,0 +1,19 @@
+
+EnvironmentLocationNotFound: Not a conda environment: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn
+
+========================================================
+RUNNING Popcorn with parameters:
+  Job ID          : 61061930_1
+  Simulation ID   : 1
+  P-value         : 0.1
+  Sample Scenario : 15K (for EAS)
+  Population 1    : EUR (80K)
+  Population 2    : EAS (15K)
+  sfile1 (Pop1)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_subcol.txt
+  sfile2 (Pop2)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.1_rho0.8_15K_subcol.txt
+  cfile           : /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_EAS_all_gen_eff.cscore
+  Output File     : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim1_p0.1_rho0.8_EUR_EAS_80K_15K_popcorn_corr.txt
+========================================================
+/var/spool/slurmd/job61061930/slurm_script: line 62: popcorn: command not found
+Popcorn analysis complete for sim1, p=0.1, EUR(80K) vs EAS(15K)
+Output saved to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim1_p0.1_rho0.8_EUR_EAS_80K_15K_popcorn_corr.txt

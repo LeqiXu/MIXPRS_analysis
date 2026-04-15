@@ -1,0 +1,121 @@
+========================================================
+RUNNING JointPRS with parameters:
+  Simulation ID : 4
+  P-value       : 0.1
+  Sample Scenario : 15K
+  Chromosome    : 3
+  GWAS N values : 311600,15000,15000,15000,15000
+  Input SST list: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EUR_sim4_p0.1_rho0.8_80K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EAS_sim4_p0.1_rho0.8_15K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AFR_sim4_p0.1_rho0.8_15K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/SAS_sim4_p0.1_rho0.8_15K_subcol.txt,/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AMR_sim4_p0.1_rho0.8_15K_subcol.txt
+========================================================
+
+
+--ref_dir=/gpfs/gibbs/pi/zhao/lx94/JointPRS/data/ref_data/PRScsx/1kg
+--bim_prefix=/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/All/All_test
+--sst_file=['/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EUR_sim4_p0.1_rho0.8_80K_subcol.txt', '/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EAS_sim4_p0.1_rho0.8_15K_subcol.txt', '/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AFR_sim4_p0.1_rho0.8_15K_subcol.txt', '/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/SAS_sim4_p0.1_rho0.8_15K_subcol.txt', '/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AMR_sim4_p0.1_rho0.8_15K_subcol.txt']
+--rho_cons=[1.0, 1.0, 1.0, 1.0, 1.0]
+--a=1
+--b=0.5
+--phi=None
+--n_gwas=[311600, 15000, 15000, 15000, 15000]
+--pop=['EUR', 'EAS', 'AFR', 'SAS', 'AMR']
+--n_iter=5000
+--n_burnin=2500
+--thin=5
+--out_dir=/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/JointPRS
+--out_name=sim4_p0.1_rho0.8_15K_JointPRS
+--chrom=['3']
+--meta=FALSE
+--seed=None
+
+
+*** 5 discovery populations detected ***
+
+##### process chromosome 3 #####
+... parse reference file: /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/ref_data/PRScsx/1kg/snpinfo_mult_1kg_hm3 ...
+... 90368 SNPs on chromosome 3 read from /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/ref_data/PRScsx/1kg/snpinfo_mult_1kg_hm3 ...
+... parse bim file: /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/All/All_test.bim ...
+... 84271 SNPs on chromosome 3 read from /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/All/All_test.bim ...
+... parse EUR sumstats file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EUR_sim4_p0.1_rho0.8_80K_subcol.txt ...
+... 716157 SNPs read from /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EUR_sim4_p0.1_rho0.8_80K_subcol.txt ...
+... 50516 common SNPs in the EUR reference, EUR sumstats, and validation set ...
+... parse EAS sumstats file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EAS_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 717967 SNPs read from /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/EAS_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 50624 common SNPs in the EAS reference, EAS sumstats, and validation set ...
+... parse AFR sumstats file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AFR_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 717967 SNPs read from /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AFR_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 50624 common SNPs in the AFR reference, AFR sumstats, and validation set ...
+... parse SAS sumstats file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/SAS_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 717967 SNPs read from /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/SAS_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 50624 common SNPs in the SAS reference, SAS sumstats, and validation set ...
+... parse AMR sumstats file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AMR_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 717967 SNPs read from /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/JointPRS/AMR_sim4_p0.1_rho0.8_15K_subcol.txt ...
+... 50624 common SNPs in the AMR reference, AMR sumstats, and validation set ...
+... parse EUR reference LD on chromosome 3 ...
+... parse EAS reference LD on chromosome 3 ...
+... parse AFR reference LD on chromosome 3 ...
+... parse SAS reference LD on chromosome 3 ...
+... parse AMR reference LD on chromosome 3 ...
+... align reference LD on chromosome 3 across populations ...
+... 50624 valid SNPs across populations ...
+... MCMC ...
+--- iter-100 ---
+--- iter-200 ---
+--- iter-300 ---
+--- iter-400 ---
+--- iter-500 ---
+--- iter-600 ---
+--- iter-700 ---
+--- iter-800 ---
+--- iter-900 ---
+--- iter-1000 ---
+--- iter-1100 ---
+--- iter-1200 ---
+--- iter-1300 ---
+--- iter-1400 ---
+--- iter-1500 ---
+--- iter-1600 ---
+--- iter-1700 ---
+--- iter-1800 ---
+--- iter-1900 ---
+--- iter-2000 ---
+--- iter-2100 ---
+--- iter-2200 ---
+--- iter-2300 ---
+--- iter-2400 ---
+--- iter-2500 ---
+--- iter-2600 ---
+--- iter-2700 ---
+--- iter-2800 ---
+--- iter-2900 ---
+--- iter-3000 ---
+--- iter-3100 ---
+--- iter-3200 ---
+--- iter-3300 ---
+--- iter-3400 ---
+--- iter-3500 ---
+--- iter-3600 ---
+--- iter-3700 ---
+--- iter-3800 ---
+--- iter-3900 ---
+--- iter-4000 ---
+--- iter-4100 ---
+--- iter-4200 ---
+--- iter-4300 ---
+--- iter-4400 ---
+--- iter-4500 ---
+--- iter-4600 ---
+--- iter-4700 ---
+--- iter-4800 ---
+--- iter-4900 ---
+--- iter-5000 ---
+... Estimated global shrinkage parameter: 1.28e-04 ...
+... Estimated Correlation Matrix for chrom 3 is : ...
+[[1.         0.363966   0.25208416 0.39718934 0.3185879 ]
+ [0.363966   1.         0.54092819 0.67703117 0.51109731]
+ [0.25208416 0.54092819 1.         0.41716022 0.43300308]
+ [0.39718934 0.67703117 0.41716022 1.         0.57144555]
+ [0.3185879  0.51109731 0.43300308 0.57144555 1.        ]]
+... Done ...
+
+
+JointPRS analysis complete for sim4, p=0.1, sample_size=15K, chr=3

@@ -1,0 +1,3508 @@
+========================================================
+RUNNING XPASS with parameters:
+  Simulation ID : 3
+  P-value       : 0.01
+  Sample Scen.  : 80K (for SAS)
+  Target Pop    : SAS (file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/SAS_sim3_p0.01_rho0.8_80K_subcol.txt)
+  Auxiliary Pop : EUR (file: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/EUR_sim3_p0.01_rho0.8_80K_subcol.txt)
+  Target Ref    : /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/SAS
+  Auxiliary Ref : /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/EUR
+  Output File   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/XPASS/sim3_p0.01_rho0.8_80K_XPASS_EUR_SAS_beta_SAS.txt
+========================================================
+Loading required package: RcppArmadillo
+Loading required package: BH
+Loading required package: pROC
+Type 'citation("pROC")' for a citation.
+
+Attaching package: ‘pROC’
+
+The following objects are masked from ‘package:stats’:
+
+    cov, smooth, var
+
+Loading required package: magic
+Loading required package: abind
+OpenGWAS updates:
+  Date: 2024-05-17
+  [>] OpenGWAS is growing!
+  [>] Please take 2 minutes to give us feedback -
+  [>] It will help directly shape our emerging roadmap
+  [>] https://forms.office.com/e/eSr7EFAfCG
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:magic’:
+
+    shift
+
+Reading target summary stats: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/SAS_sim3_p0.01_rho0.8_80K_subcol.txt
+Clumping target population (SAS) SNPs...
+Clumping x6cp1T, 717967 variants, using: /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/SAS
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /tmp/Rtmppmbp9k/fileab7c57d0e042a.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/SAS
+  --clump /tmp/Rtmppmbp9k/fileab7c57d0e042a
+  --clump-kb 1000
+  --clump-p1 1e-10
+  --clump-r2 0.1
+  --out /tmp/Rtmppmbp9k/fileab7c57d0e042a
+
+1546838 MB RAM detected; reserving 773419 MB for main workspace.
+1072754 variants loaded from .bim file.
+484 people (257 males, 227 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 484 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+1072754 variants and 484 people pass filters and QC.
+Note: No phenotypes present.
+--clump: 23 clumps formed from 81 top variants.
+Results written to /tmp/Rtmppmbp9k/fileab7c57d0e042a.clumped .
+Removing 717944 of 717967 variants due to LD with other variants or absence from LD reference panel
+Found 23 SNPs to use for fixed effects in target pop.
+Reading auxiliary summary stats: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/EUR_sim3_p0.01_rho0.8_80K_subcol.txt
+Clumping auxiliary population (EUR) SNPs...
+Clumping 6uWkKD, 716157 variants, using: /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/EUR
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /tmp/Rtmppmbp9k/fileab7c5344c101d.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/EUR
+  --clump /tmp/Rtmppmbp9k/fileab7c5344c101d
+  --clump-kb 1000
+  --clump-p1 1e-10
+  --clump-r2 0.1
+  --out /tmp/Rtmppmbp9k/fileab7c5344c101d
+
+1546838 MB RAM detected; reserving 773419 MB for main workspace.
+1061108 variants loaded from .bim file.
+503 people (240 males, 263 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 503 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+1061108 variants and 503 people pass filters and QC.
+Note: No phenotypes present.
+--clump: 767 clumps formed from 7832 top variants.
+Results written to /tmp/Rtmppmbp9k/fileab7c5344c101d.clumped .
+Removing 715390 of 716157 variants due to LD with other variants or absence from LD reference panel
+Found 767 SNPs to use for fixed effects in auxiliary pop.
+Running XPASS...
+Summary statistics file 1: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/SAS_sim3_p0.01_rho0.8_80K_subcol.txt
+Summary statistics file 2: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/XPASS/EUR_sim3_p0.01_rho0.8_80K_subcol.txt
+Reference file 1: /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/SAS
+Reference file 2: /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/1000g_phase3_data/geno_data/EUR
+Reading data from summary statisitcs...
+717967 and 716157 SNPs found in summary statistics files 1 and 2.
+Reading SNP info from reference panels...
+1072754 and 1061108 SNPs found in reference panel 1 and 2.
+716134 SNPs are matched in all files.
+0 SNPs are removed because of ambiguity; 716134 SNPs remained.
+Calculating kinship matrix from the both reference panels...
+0 SNPs are removed because of no variation; 716134 SNPs remained.
+252655 SNPs have different minor alleles in population 1, z-scores are corrected according to reference panel.
+248982 SNPs have different minor alleles in population 2, z-scores are corrected according to reference panel.
+Assigning SNPs to LD Blocks...
+Calculate PVE...
+              h1          h2         h12        rho
+[1,] 0.166185427 0.142135690 0.252647422 1.64386758
+[2,] 0.005458813 0.004136214 0.008810809 0.03100346
+The MoM estimate of genetic correlation rho is  1.643868 , which exceeds boundary. Set rho=0.99 (-0.99) for computing posterior means. 
+Compute posterior mean from  1695  blocks ...
+Compute posterior mean from two datasets.
+Block 1 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 2 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 3 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 4 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 5 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 6 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 7 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 8 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 9 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 10 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 11 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 12 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 13 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 14 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 15 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 16 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 17 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 18 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 19 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 20 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 21 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 22 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 23 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 24 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 25 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 26 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 27 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 28 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 29 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 30 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 31 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 32 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 33 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 34 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 35 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 36 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 37 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 38 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 39 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 40 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 41 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 42 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 43 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 44 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 45 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 46 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 47 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 48 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 49 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 50 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 51 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 52 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 53 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 54 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 55 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 56 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 57 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 58 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 59 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 60 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 61 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 62 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 63 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 64 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 65 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 66 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 67 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 68 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 69 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 70 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 71 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 72 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 73 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 74 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 75 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 76 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 77 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 78 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 79 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 80 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 81 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 82 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 83 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 84 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 85 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 86 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 87 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 88 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 89 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 90 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 91 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 92 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 93 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 94 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 95 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 96 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 97 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 98 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 99 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 100 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 101 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 102 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 103 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 104 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 105 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 106 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 107 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 108 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 109 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 110 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 111 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 112 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 113 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 114 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 115 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 116 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 117 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 118 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 119 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 120 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 121 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 122 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 123 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 124 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 125 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 126 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 127 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 128 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 129 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 130 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 131 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 132 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 133 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 134 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 135 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 136 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 137 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 138 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 139 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 140 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 141 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 142 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 143 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 144 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 145 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 146 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 147 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 148 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 149 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 150 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 151 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 152 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 153 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 154 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 155 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 156 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 157 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 158 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 159 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 160 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 161 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 162 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 163 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 164 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 165 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 166 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 167 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 168 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 169 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 170 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 171 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 172 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 173 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 174 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 175 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 176 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 177 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 178 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 179 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 180 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 181 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 182 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 183 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 184 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 185 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 186 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 187 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 188 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 189 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 190 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 191 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 192 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 193 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 194 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 195 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 196 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 197 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 198 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 199 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 200 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 201 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 202 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 203 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 204 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 205 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 206 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 207 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 208 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 209 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 210 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 211 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 212 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 213 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 214 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 215 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 216 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 217 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 218 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 219 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 220 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 221 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 222 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 223 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 224 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 225 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 226 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 227 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 228 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 229 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 230 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 231 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 232 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 233 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 234 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 235 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 236 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 237 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 238 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 239 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 240 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 241 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 242 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 243 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 244 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 245 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 246 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 247 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 248 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 249 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 250 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 251 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 252 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 253 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 254 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 255 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 256 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 257 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 258 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 259 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 260 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 261 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 262 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 263 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 264 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 265 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 266 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 267 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 268 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 269 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 270 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 271 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 272 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 273 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 274 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 275 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 276 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 277 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 278 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 279 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 280 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 281 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 282 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 283 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 284 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 285 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 286 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 287 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 288 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 289 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 290 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 291 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 292 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 293 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 294 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 295 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 296 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 297 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 298 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 299 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 300 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 301 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 302 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 303 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 304 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 305 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 306 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 307 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 308 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 309 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 310 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 311 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 312 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 313 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 314 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 315 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 316 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 317 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 318 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 319 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 320 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 321 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 322 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 323 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 324 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 325 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 326 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 327 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 328 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 329 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 330 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 331 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 332 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 333 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 334 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 335 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 336 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 337 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 338 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 339 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 340 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 341 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 342 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 343 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 344 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 345 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 346 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 347 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 348 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 349 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 350 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 351 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 352 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 353 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 354 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 355 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 356 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 357 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 358 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 359 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 360 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 361 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 362 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 363 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 364 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 365 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 366 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 367 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 368 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 369 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 370 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 371 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 372 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 373 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 374 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 375 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 376 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 377 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 378 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 379 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 380 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 381 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 382 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 383 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 384 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 385 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 386 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 387 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 388 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 389 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 390 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 391 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 392 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 393 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 394 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 395 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 396 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 397 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 398 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 399 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 400 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 401 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 402 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 403 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 404 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 405 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 406 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 407 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 408 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 409 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 410 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 411 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 412 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 413 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 414 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 415 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 416 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 417 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 418 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 419 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 420 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 421 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 422 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 423 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 424 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 425 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 426 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 427 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 428 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 429 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 430 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 431 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 432 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 433 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 434 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 435 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 436 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 437 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 438 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 439 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 440 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 441 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 442 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 443 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 444 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 445 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 446 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 447 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 448 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 449 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 450 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 451 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 452 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 453 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 454 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 455 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 456 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 457 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 458 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 459 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 460 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 461 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 462 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 463 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 464 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 465 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 466 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 467 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 468 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 469 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 470 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 471 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 472 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 473 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 474 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 475 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 476 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 477 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 478 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 479 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 480 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 481 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 482 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 483 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 484 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 485 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 486 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 487 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 488 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 489 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 490 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 491 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 492 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 493 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 494 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 495 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 496 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 497 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 498 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 499 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 500 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 501 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 502 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 503 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 504 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 505 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 506 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 507 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 508 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 509 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 510 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 511 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 512 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 513 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 514 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 515 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 516 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 517 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 518 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 519 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 520 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 521 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 522 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 523 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 524 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 525 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 526 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 527 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 528 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 529 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 530 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 531 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 532 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 533 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 534 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 535 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 536 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 537 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 538 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 539 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 540 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 541 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 542 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 543 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 544 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 545 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 546 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 547 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 548 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 549 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 550 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 551 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 552 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 553 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 554 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 555 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 556 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 557 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 558 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 559 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 560 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 561 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 562 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 563 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 564 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 565 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 566 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 567 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 568 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 569 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 570 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 571 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 572 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 573 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 574 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 575 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 576 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 577 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 578 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 579 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 580 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 581 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 582 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 583 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 584 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 585 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 586 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 587 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 588 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 589 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 590 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 591 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 592 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 593 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 594 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 595 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 596 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 597 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 598 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 599 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 600 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 601 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 602 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 603 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 604 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 605 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 606 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 607 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 608 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 609 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 610 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 611 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 612 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 613 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 614 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 615 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 616 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 617 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 618 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 619 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 620 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 621 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 622 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 623 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 624 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 625 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 626 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 627 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 628 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 629 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 630 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 631 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 632 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 633 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 634 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 635 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 636 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 637 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 638 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 639 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 640 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 641 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 642 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 643 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 644 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 645 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 646 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 647 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 648 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 649 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 650 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 651 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 652 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 653 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 654 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 655 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 656 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 657 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 658 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 659 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 660 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 661 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 662 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 663 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 664 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 665 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 666 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 667 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 668 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 669 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 670 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 671 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 672 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 673 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 674 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 675 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 676 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 677 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 678 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 679 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 680 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 681 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 682 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 683 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 684 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 685 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 686 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 687 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 688 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 689 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 690 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 691 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 692 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 693 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 694 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 695 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 696 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 697 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 698 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 699 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 700 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 701 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 702 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 703 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 704 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 705 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 706 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 707 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 708 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 709 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 710 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 711 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 712 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 713 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 714 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 715 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 716 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 717 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 718 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 719 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 720 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 721 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 722 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 723 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 724 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 725 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 726 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 727 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 728 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 729 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 730 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 731 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 732 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 733 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 734 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 735 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 736 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 737 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 738 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 739 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 740 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 741 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 742 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 743 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 744 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 745 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 746 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 747 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 748 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 749 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 750 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 751 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 752 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 753 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 754 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 755 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 756 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 757 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 758 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 759 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 760 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 761 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 762 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 763 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 764 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 765 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 766 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 767 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 768 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 769 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 770 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 771 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 772 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 773 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 774 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 775 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 776 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 777 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 778 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 779 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 780 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 781 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 782 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 783 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 784 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 785 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 786 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 787 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 788 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 789 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 790 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 791 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 792 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 793 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 794 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 795 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 796 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 797 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 798 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 799 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 800 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 801 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 802 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 803 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 804 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 805 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 806 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 807 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 808 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 809 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 810 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 811 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 812 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 813 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 814 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 815 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 816 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 817 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 818 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 819 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 820 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 821 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 822 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 823 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 824 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 825 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 826 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 827 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 828 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 829 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 830 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 831 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 832 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 833 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 834 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 835 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 836 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 837 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 838 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 839 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 840 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 841 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 842 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 843 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 844 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 845 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 846 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 847 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 848 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 849 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 850 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 851 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 852 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 853 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 854 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 855 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 856 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 857 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 858 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 859 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 860 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 861 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 862 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 863 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 864 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 865 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 866 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 867 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 868 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 869 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 870 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 871 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 872 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 873 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 874 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 875 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 876 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 877 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 878 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 879 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 880 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 881 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 882 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 883 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 884 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 885 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 886 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 887 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 888 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 889 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 890 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 891 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 892 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 893 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 894 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 895 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 896 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 897 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 898 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 899 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 900 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 901 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 902 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 903 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 904 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 905 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 906 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 907 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 908 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 909 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 910 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 911 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 912 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 913 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 914 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 915 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 916 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 917 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 918 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 919 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 920 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 921 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 922 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 923 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 924 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 925 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 926 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 927 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 928 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 929 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 930 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 931 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 932 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 933 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 934 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 935 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 936 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 937 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 938 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 939 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 940 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 941 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 942 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 943 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 944 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 945 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 946 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 947 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 948 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 949 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 950 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 951 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 952 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 953 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 954 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 955 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 956 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 957 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 958 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 959 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 960 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 961 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 962 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 963 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 964 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 965 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 966 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 967 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 968 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 969 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 970 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 971 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 972 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 973 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 974 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 975 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 976 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 977 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 978 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 979 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 980 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 981 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 982 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 983 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 984 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 985 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 986 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 987 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 988 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 989 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 990 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 991 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 992 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 993 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 994 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 995 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 996 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 997 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 998 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 999 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1000 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1001 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1002 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1003 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1004 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1005 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1006 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1007 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1008 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1009 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1010 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1011 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1012 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1013 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1014 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1015 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1016 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1017 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1018 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1019 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1020 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1021 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1022 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1023 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1024 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1025 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1026 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1027 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1028 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1029 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1030 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1031 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1032 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1033 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1034 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1035 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1036 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1037 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1038 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1039 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1040 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1041 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1042 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1043 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1044 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1045 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1046 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1047 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1048 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1049 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1050 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1051 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1052 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1053 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1054 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1055 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1056 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1057 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1058 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1059 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1060 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1061 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1062 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1063 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1064 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1065 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1066 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1067 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1068 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1069 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1070 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1071 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1072 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1073 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1074 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1075 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1076 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1077 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1078 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1079 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1080 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1081 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1082 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1083 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1084 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1085 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1086 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1087 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1088 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1089 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1090 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1091 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1092 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1093 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1094 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1095 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1096 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1097 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1098 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1099 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1100 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1101 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1102 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1103 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1104 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1105 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1106 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1107 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1108 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1109 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1110 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1111 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1112 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1113 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1114 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1115 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1116 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1117 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1118 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1119 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1120 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1121 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1122 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1123 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1124 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1125 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1126 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1127 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1128 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1129 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1130 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1131 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1132 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1133 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1134 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1135 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1136 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1137 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1138 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1139 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1140 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1141 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1142 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1143 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1144 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1145 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1146 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1147 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1148 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1149 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1150 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1151 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1152 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1153 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1154 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1155 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1156 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1157 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1158 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1159 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1160 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1161 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1162 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1163 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1164 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1165 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1166 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1167 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1168 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1169 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1170 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1171 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1172 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1173 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1174 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1175 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1176 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1177 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1178 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1179 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1180 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1181 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1182 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1183 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1184 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1185 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1186 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1187 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1188 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1189 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1190 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1191 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1192 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1193 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1194 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1195 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1196 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1197 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1198 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1199 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1200 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1201 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1202 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1203 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1204 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1205 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1206 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1207 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1208 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1209 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1210 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1211 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1212 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1213 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1214 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1215 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1216 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1217 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1218 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1219 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1220 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1221 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1222 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1223 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1224 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1225 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1226 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1227 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1228 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1229 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1230 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1231 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1232 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1233 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1234 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1235 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1236 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1237 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1238 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1239 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1240 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1241 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1242 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1243 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1244 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1245 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1246 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1247 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1248 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1249 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1250 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1251 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1252 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1253 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1254 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1255 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1256 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1257 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1258 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1259 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1260 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1261 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1262 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1263 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1264 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1265 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1266 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1267 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1268 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1269 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1270 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1271 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1272 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1273 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1274 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1275 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1276 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1277 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1278 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1279 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1280 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1281 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1282 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1283 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1284 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1285 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1286 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1287 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1288 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1289 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1290 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1291 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1292 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1293 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1294 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1295 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1296 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1297 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1298 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1299 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1300 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1301 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1302 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1303 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1304 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1305 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1306 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1307 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1308 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1309 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1310 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1311 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1312 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1313 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1314 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1315 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1316 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1317 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1318 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1319 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1320 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1321 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1322 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1323 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1324 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1325 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1326 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1327 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1328 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1329 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1330 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1331 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1332 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1333 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1334 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1335 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1336 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1337 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1338 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1339 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1340 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1341 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1342 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1343 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1344 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1345 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1346 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1347 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1348 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1349 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1350 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1351 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1352 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1353 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1354 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1355 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1356 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1357 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1358 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1359 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1360 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1361 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1362 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1363 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1364 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1365 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1366 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1367 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1368 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1369 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1370 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1371 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1372 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1373 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1374 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1375 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1376 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1377 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1378 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1379 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1380 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1381 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1382 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1383 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1384 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1385 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1386 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1387 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1388 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1389 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1390 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1391 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1392 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1393 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1394 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1395 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1396 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1397 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1398 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1399 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1400 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1401 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1402 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1403 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1404 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1405 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1406 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1407 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1408 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1409 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1410 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1411 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1412 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1413 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1414 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1415 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1416 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1417 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1418 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1419 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1420 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1421 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1422 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1423 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1424 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1425 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1426 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1427 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1428 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1429 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1430 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1431 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1432 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1433 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1434 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1435 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1436 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1437 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1438 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1439 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1440 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1441 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1442 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1443 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1444 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1445 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1446 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1447 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1448 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1449 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1450 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1451 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1452 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1453 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1454 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1455 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1456 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1457 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1458 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1459 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1460 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1461 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1462 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1463 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1464 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1465 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1466 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1467 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1468 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1469 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1470 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1471 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1472 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1473 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1474 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1475 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1476 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1477 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1478 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1479 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1480 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1481 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1482 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1483 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1484 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1485 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1486 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1487 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1488 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1489 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1490 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1491 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1492 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1493 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1494 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1495 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1496 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1497 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1498 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1499 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1500 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1501 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1502 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1503 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1504 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1505 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1506 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1507 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1508 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1509 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1510 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1511 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1512 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1513 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1514 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1515 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1516 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1517 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1518 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1519 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1520 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1521 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1522 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1523 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1524 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1525 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1526 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1527 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1528 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1529 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1530 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1531 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1532 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1533 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1534 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1535 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1536 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1537 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1538 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1539 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1540 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1541 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1542 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1543 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1544 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1545 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1546 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1547 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1548 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1549 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1550 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1551 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1552 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1553 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1554 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1555 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1556 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1557 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1558 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1559 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1560 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1561 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1562 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1563 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1564 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1565 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1566 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1567 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1568 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1569 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1570 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1571 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1572 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1573 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1574 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1575 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1576 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1577 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1578 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1579 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1580 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1581 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1582 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1583 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1584 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1585 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1586 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1587 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1588 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1589 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1590 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1591 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1592 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1593 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1594 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1595 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1596 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1597 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1598 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1599 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1600 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1601 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1602 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1603 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1604 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1605 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1606 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1607 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1608 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1609 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1610 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1611 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1612 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1613 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1614 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1615 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1616 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1617 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1618 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1619 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1620 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1621 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1622 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1623 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1624 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1625 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1626 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1627 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1628 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1629 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1630 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1631 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1632 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1633 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1634 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1635 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1636 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1637 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1638 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1639 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1640 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1641 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1642 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1643 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1644 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1645 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1646 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1647 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1648 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1649 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1650 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1651 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1652 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1653 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1654 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1655 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1656 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1657 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1658 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1659 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1660 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1661 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1662 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1663 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1664 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1665 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1666 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1667 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1668 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1669 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1670 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1671 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1672 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1673 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1674 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1675 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1676 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1677 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1678 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1679 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1680 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1681 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1682 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1683 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1684 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1685 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1686 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1687 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1688 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1689 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1690 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1691 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1692 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1693 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1694 / 1695  finished. 
+Compute posterior mean from two datasets.
+Block 1695 / 1695  finished. 
+Done.
+              h1          h2         h12        rho
+[1,] 0.166185427 0.142135690 0.252647422 1.64386758
+[2,] 0.005458813 0.004136214 0.008810809 0.03100346
+Formatting and writing output to: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/XPASS/sim3_p0.01_rho0.8_80K_XPASS_EUR_SAS_beta_SAS.txt
+XPASS complete.
+R script finished for 3, 0.01, 80K, SAS

@@ -26,8 +26,8 @@ my_theme <- theme(
   strip.text   = element_text(size = 10, face = "bold"),
   panel.grid.major.x = element_blank(),
   panel.grid.minor.x = element_blank(),
-  panel.grid.major.y = element_line(color = "grey", size = 0.5),
-  panel.grid.minor.y = element_line(color = "lightgrey", size = 0.25),
+  panel.grid.major.y = element_blank(),
+  panel.grid.minor.y = element_blank(),
   legend.position  = "top",
   legend.title     = element_text(size = 9, face = "bold"),     # title size
   legend.text      = element_text(size = 7),
@@ -95,28 +95,33 @@ p2 <- ggplot(summary_table, aes(x = pop, y = mean_r2, group = method, fill = met
 
 combined_plot <- ggarrange(p1, p2, ncol = 1, nrow = 2, labels = c("a","b"), heights = c(0.5,0.5))
 
+annotated_plot <- ggdraw(combined_plot) +
+  draw_label("**",
+             x = 0.38, y = 0.015,
+             hjust = 1, vjust = 0,
+             color = "red",
+             fontface = "bold",
+             size = 8) +
+  draw_label("Best Method",
+             x = 0.40, y = 0.015,
+             hjust = 0, vjust = 0,
+             size = 8) +
+  draw_label("*",
+             x = 0.56, y = 0.015,
+             hjust = 1, vjust = 0,
+             color = "red",
+             fontface = "bold",
+             size = 8) +
+  draw_label("Second Best Method",
+             x = 0.58, y = 0.015,
+             hjust = 0, vjust = 0,
+             size = 8)
+
 # Save the figure to match the journal guidelines
 ggsave(filename = "FigureS1.pdf",
-       plot = combined_plot,
+       plot = annotated_plot,
        width = 6.5, 
        height = 8,
        units = "in",
        dpi = 300,
-       device   = cairo_pdf)  # high-resolution for publication
-
-
-grid.text("**", 
-          x = unit(0.5, "npc"), y = unit(0.82, "npc"), 
-          gp = gpar(col = "red", fontsize = 14))
-
-grid.text("Best Method", 
-          x = unit(0.55, "npc"), y = unit(0.82, "npc"), 
-          gp = gpar(col = "black", fontsize = 14))
-
-grid.text("*", 
-          x = unit(0.63, "npc"), y = unit(0.82, "npc"), 
-          gp = gpar(col = "red", fontsize = 14))
-
-grid.text("Second Best Method", 
-          x = unit(0.7, "npc"), y = unit(0.82, "npc"), 
-          gp = gpar(col = "black", fontsize = 14))
+       device   = cairo_pdf)  # high-resolution for publication      

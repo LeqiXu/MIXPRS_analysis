@@ -1,0 +1,485 @@
+/var/spool/slurmd/job61060098/slurm_script: line 15: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/code/4_methods/popcorn/codes/popcorn_params.txt: No such file or directory
+Generating parameter file at /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/code/4_methods/popcorn/codes/popcorn_params.txt...
+Warning: Missing input files for sim 1, p 0.1, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.1, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.01, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 0.001, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim1_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 1, p 5e-04, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim1_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.1, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.01, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 0.001, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim2_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim2_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 2, p 5e-04, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim2_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.1, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.01, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 0.001, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim3_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim3_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 3, p 5e-04, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim3_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.1, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.01, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 0.001, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim4_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim4_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 4, p 5e-04, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim4_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.1_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.1, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.1_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.1_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.01_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.01, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.01_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.01_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.001_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 0.001, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p0.001_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p0.001_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 15K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 15K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 15K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 15K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p5e-04_rho0.8_15K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 80K, pop EAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim5_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 80K, pop AFR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AFR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 80K, pop SAS. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/SAS_sim5_p5e-04_rho0.8_80K_popcorn.txt
+Warning: Missing input files for sim 5, p 5e-04, size 80K, pop AMR. Skipping.
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+  Missing: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/AMR_sim5_p5e-04_rho0.8_80K_popcorn.txt
+sbatch: error: Unable to open file /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/code/4_methods/popcorn/codes/job_run_popcorn.sh
+Submitted Popcorn array job with 1 tasks (out of 0 total runnable tasks).
+Parameters written to: /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/code/4_methods/popcorn/codes/popcorn_params.txt

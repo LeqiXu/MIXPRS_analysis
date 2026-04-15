@@ -1,0 +1,68 @@
+========================================================
+RUNNING: MIXPRS_S
+  Simulation ID : 1
+  P-value       : 0.1
+  Sample Scenario : 15K
+  Test Pop (bfile): EAS
+========================================================
+  Generating 2 scores for MIXPRS_S...
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EUR_prs_EAS.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/EAS_sim1_p0.1_rho0.8_15K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EUR_prs_EAS
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EUR.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:35:07 2025
+191959 MiB RAM detected; reserving 95979 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS.fam.
+1076397 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS.bim.
+Note: No phenotype data present.
+--extract: 717936 variants remaining.
+Calculating allele frequencies... 0%5%12%18%24%30%36%42%48%54%60%66%72%78%84%91%97%done.
+717936 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 170k variants processed.--score: 180k variants processed.Warning: 7 --score file entries were skipped due to missing variant IDs.
+(Add the 'list-variants' modifier to see which variants were actually used for
+scoring.)
+--score: 182362 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EUR_prs_EAS.sscore
+.
+End time: Sat Nov  8 21:35:13 2025
+    - Created sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EUR_prs_EAS.sscore
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EAS_prs_EAS.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/EAS_sim1_p0.1_rho0.8_15K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EAS_prs_EAS
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EAS.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:35:13 2025
+191959 MiB RAM detected; reserving 95979 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS.fam.
+1076397 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/EAS/test/EAS.bim.
+Note: No phenotype data present.
+--extract: 717936 variants remaining.
+Calculating allele frequencies... 0%5%12%18%24%30%36%42%48%54%60%66%72%78%84%91%97%done.
+717936 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 168854 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EAS_prs_EAS.sscore
+.
+End time: Sat Nov  8 21:35:19 2025
+    - Created sim1_p0.1_rho0.8_15K_EUR_EAS_beta_EAS_prs_EAS.sscore
+--- Job complete for MIXPRS_S, sim 1, p 0.1, sample 15K, pop EAS ---

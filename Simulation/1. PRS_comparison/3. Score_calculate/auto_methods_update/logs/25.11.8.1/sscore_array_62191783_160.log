@@ -1,0 +1,65 @@
+========================================================
+RUNNING: MIXPRS_S
+  Simulation ID : 1
+  P-value       : 5e-04
+  Sample Scenario : 80K
+  Test Pop (bfile): AMR
+========================================================
+  Generating 2 scores for MIXPRS_S...
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_EUR_prs_AMR.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/AMR_sim1_p5e-04_rho0.8_80K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_EUR_prs_AMR
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_EUR.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:36:24 2025
+1031783 MiB RAM detected; reserving 515891 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR.fam.
+1199200 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR.bim.
+Note: No phenotype data present.
+--extract: 717814 variants remaining.
+Calculating allele frequencies... 0%5%10%16%21%27%32%38%43%49%54%59%65%70%76%81%87%92%98%done.
+717814 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 170k variants processed.--score: 180k variants processed.--score: 182343 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_EUR_prs_AMR.sscore
+.
+End time: Sat Nov  8 21:36:35 2025
+    - Created sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_EUR_prs_AMR.sscore
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)     www.cog-genomics.org/plink/2.0/
+(C) 2005-2022 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_AMR_prs_AMR.log.
+Options in effect:
+  --bfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR
+  --double-id
+  --extract /gpfs/gibbs/pi/zhao/lx94/JointPRS/data/snplist_data/simulation/AMR_sim1_p5e-04_rho0.8_80K_inter_snplist_real.txt
+  --out /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_AMR_prs_AMR
+  --score /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/bind_chromosome/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_AMR.txt 1 2 3 header
+  --threads 1
+
+Start time: Sat Nov  8 21:36:35 2025
+1031783 MiB RAM detected; reserving 515891 MiB for main workspace.
+Using 1 compute thread.
+10000 samples (0 females, 0 males, 10000 ambiguous; 10000 founders) loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR.fam.
+1199200 variants loaded from
+/gpfs/gibbs/pi/zhao/lx94/JointPRS/revision/data/sim_data/geno_data/AMR/test/AMR.bim.
+Note: No phenotype data present.
+--extract: 717814 variants remaining.
+Calculating allele frequencies... 0%5%10%16%21%27%32%38%43%49%54%59%65%70%76%81%87%92%98%done.
+717814 variants remaining after main filters.
+--score: 10k variants processed.--score: 20k variants processed.--score: 30k variants processed.--score: 40k variants processed.--score: 50k variants processed.--score: 60k variants processed.--score: 70k variants processed.--score: 80k variants processed.--score: 90k variants processed.--score: 100k variants processed.--score: 110k variants processed.--score: 120k variants processed.--score: 130k variants processed.--score: 140k variants processed.--score: 150k variants processed.--score: 160k variants processed.--score: 170k variants processed.--score: 180k variants processed.--score: 190k variants processed.--score: 198820 variants processed.
+--score: Results written to
+/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/prs_scores/MIXPRS/MIXPRS-SDPRX/sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_AMR_prs_AMR.sscore
+.
+End time: Sat Nov  8 21:36:47 2025
+    - Created sim1_p5e-04_rho0.8_80K_EUR_AMR_beta_AMR_prs_AMR.sscore
+--- Job complete for MIXPRS_S, sim 1, p 5e-04, sample 80K, pop AMR ---

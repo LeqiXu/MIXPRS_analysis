@@ -1,0 +1,40 @@
+========================================================
+RUNNING Popcorn with parameters:
+  Job ID          : 61060964_1
+  Simulation ID   : 1
+  P-value         : 0.1
+  Sample Scenario : 15K (for EAS)
+  Population 1    : EUR (80K)
+  Population 2    : EAS (15K)
+  sfile1 (Pop1)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_subcol.txt
+  sfile2 (Pop2)   : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.1_rho0.8_15K_subcol.txt
+  cfile           : /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_EAS_all_gen_eff.cscore
+  Output File     : /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim1_p0.1_rho0.8_EUR_EAS_80K_15K_popcorn_corr.txt
+========================================================
+Popcorn version 1.1
+(C) 2015-2025 Brielin C Brown
+University of California, Berkeley
+GNU General Public License v3
+
+Invoking command: python /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/bin/popcorn fit -v 0 --cfile /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_EAS_all_gen_eff.cscore --gen_effect --sfile1 /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_subcol.txt --sfile2 /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EAS_sim1_p0.1_rho0.8_15K_subcol.txt /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim1_p0.1_rho0.8_EUR_EAS_80K_15K_popcorn_corr.txt
+Beginning analysis at Thu Oct 30 14:21:29 2025
+Analyzing a pair of traits in two populations
+Parsing /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/data/sim_data/summary_data/discover_validate/popcorn/EUR_sim1_p0.1_rho0.8_80K_subcol.txt ...
+Traceback (most recent call last):
+  File "/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/bin/popcorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/lib/python3.7/site-packages/popcorn/__main__.py", line 209, in main
+    data = sumstats.sumstats_2_trait(scores,args)
+  File "/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/lib/python3.7/site-packages/popcorn/sumstats.py", line 175, in __init__
+    data1, id_type1 = self.parse_input(args.sfile1)
+  File "/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/lib/python3.7/site-packages/popcorn/sumstats.py", line 109, in parse_input
+    has_comp = data[['a1', 'a2']].map(lambda x: x in compliment)
+  File "/home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/env/popcorn/lib/python3.7/site-packages/pandas/core/generic.py", line 5487, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'map'
+Popcorn analysis complete for sim1, p=0.1, EUR(80K) vs EAS(15K)
+Output saved to /home/yd357/pi_paths/pi_zhao/MIXPRS_Revise/Project1_15K_80K/result/add_benchmark/25.10.4/sim_data/popcorn/sim1_p0.1_rho0.8_EUR_EAS_80K_15K_popcorn_corr.txt
+
+
+ls -l /gpfs/gibbs/pi/zhao/lx94/JointPRS/method/Popcorn/ref/EUR_EAS_all_gen_eff_all_gen_eff.cscore
+# replace POP1/POP2 with one example from your params file
